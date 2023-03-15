@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+.navigationmenu {
+  display: none;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1em 0 1em;
+}
+
+input,
+.gosearch {
+  height: 30px;
+  border: 2px solid;
+  outline: none;
+}
+input {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-right: 0.5px solid;
+}
+.gosearch {
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-left: 0.5px solid;
+}
