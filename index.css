@@ -36,3 +36,37 @@ input {
   border-bottom-right-radius: 18px;
   border-left: 0.5px solid;
 }
+.inplayvideo {
+  grid-area: inplayvideo;
+  width: 100%;
+}
+.recommendedvideos {
+  grid-area: recommendedvideos;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: auto;
+  grid-template-areas: "inplayvideo recommendedvideos";
+  margin: 5px;
+}
+
+.recommendedvideos div {
+  height: 80px;
+  width: 125px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+}
+#wistia_loading_svg_72 path {
+  stroke-width: 2px;
+  stroke-dasharray: 36.299235026041664, 72.59847005208333;
+  animation: wistia_dash 1s infinite linear forwards;
+}
+@keyframes wistia_dash {
+  from {
+    stroke-dashoffset: 108.897705078125;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
