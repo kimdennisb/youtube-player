@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 header {
   display: flex;
@@ -42,13 +42,17 @@ input {
 }
 .recommendedvideos {
   grid-area: recommendedvideos;
+  width: 100%;
 }
 section {
   display: grid;
-  grid-template-columns: 1fr 150px;
+  grid-template-columns: 1fr 0.5fr;
   grid-template-rows: auto;
   grid-template-areas: "inplayvideo recommendedvideos";
   margin: 5px;
+  align-items: start;
+  justify-items: start;
+  column-gap: 5px;
 }
 
 .recommendedvideos div {
