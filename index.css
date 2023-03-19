@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
+  width: 100%;
 }
 header {
   display: flex;
@@ -42,6 +43,8 @@ input {
 }
 .recommendedvideos {
   grid-area: recommendedvideos;
+  margin: 0;
+    width: auto;
 }
 section {
   display: grid;
