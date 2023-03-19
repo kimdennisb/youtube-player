@@ -42,7 +42,6 @@ input {
 }
 .recommendedvideos {
   grid-area: recommendedvideos;
-  width: 100%;
 }
 section {
   display: grid;
