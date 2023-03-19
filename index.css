@@ -45,7 +45,7 @@ input {
 }
 section {
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 0.75fr;
   grid-template-rows: auto;
   grid-template-areas: "inplayvideo recommendedvideos";
   margin: 5px;
@@ -54,10 +54,8 @@ section {
   column-gap: 5px;
 }
 
-.recommendedvideos div {
-  height: 80px;
-  width: 125px;
-  border: 1px solid gray;
+.recommendedvideos > div {
+  /*border: 1px solid gray;*/
   margin-bottom: 5px;
   display: flex;
     flex-direction: row;
@@ -66,11 +64,17 @@ section {
 svg#wistia_loading_svg_72 {
   height: 80px;
   width: 125px;
+  border: 1px solid gray;
+  margin: 0;
+  border-radius: 15px;
 }
 #wistia_loading_svg_72 path {
   stroke-width: 2px;
   stroke-dasharray: 36.299235026041664, 72.59847005208333;
   animation: wistia_dash 1s infinite linear forwards;
+}
+.specifities {
+  width: auto;
 }
 @keyframes wistia_dash {
   from {
