@@ -39,12 +39,9 @@ input {
 }
 .inplayvideo {
   grid-area: inplayvideo;
-  width: 100%;
 }
 .recommendedvideos {
   grid-area: recommendedvideos;
-  margin: 0;
-    width: auto;
 }
 section {
   display: grid;
@@ -62,6 +59,13 @@ section {
   width: 125px;
   border: 1px solid gray;
   margin-bottom: 5px;
+  display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+svg#wistia_loading_svg_72 {
+  height: 80px;
+  width: 125px;
 }
 #wistia_loading_svg_72 path {
   stroke-width: 2px;
